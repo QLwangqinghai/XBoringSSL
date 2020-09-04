@@ -56,7 +56,7 @@
 #define OPENSSL_NO_ASM
 #endif
 
-#define BORINGSSL_PREFIX CNIOBoringSSL
+#define BORINGSSL_PREFIX XBoringSSL
 
 
 // This file should be the first included by all BoringSSL headers.
