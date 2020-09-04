@@ -25,7 +25,7 @@ import PackageDescription
 // BoringSSL Commit: 1c58648f14ed75f2a8cc3ae08897987d97f493ec
 
 let package = Package(
-    name: "swift-nio-ssl",
+    name: "XCrypto",
     products: [
         .library(name: "CNIOBoringSSLEcdh", targets: ["CNIOBoringSSLEcdh"]),
         .executable(name: "CNIOBoringSSLEcdhRun", targets: ["CNIOBoringSSLEcdhRun"]),
@@ -39,16 +39,7 @@ MANGLE_END */
     dependencies: [
     ],
     targets: [
-        .target(name: "CNIOBoringSSL"),
-        .target(name: "CNIOBoringSSLEcdh", dependencies: ["CNIOBoringSSL"]),
-        .target(name: "CNIOBoringSSLEcdhRun", dependencies: ["CNIOBoringSSL", "CNIOBoringSSLEcdh"]),
-        .target(name: "CNIOBoringSSLShims", dependencies: ["CNIOBoringSSL"]),
-        .target(name: "NIOSSL",
-                dependencies: ["NIO", "NIOConcurrencyHelpers", "CNIOBoringSSL", "CNIOBoringSSLShims", "NIOTLS"]),
-        .target(name: "NIOTLSServer", dependencies: ["NIO", "NIOSSL", "NIOConcurrencyHelpers"]),
-        .target(name: "NIOSSLHTTP1Client", dependencies: ["NIO", "NIOHTTP1", "NIOSSL", "NIOFoundationCompat"]),
-        .target(name: "NIOSSLPerformanceTester", dependencies: ["NIO", "NIOSSL"]),
-        .testTarget(name: "NIOSSLTests", dependencies: ["NIOTLS", "NIOSSL"]),
+        .target(name: "XBoringSSL"),
     ],
     cxxLanguageStandard: .cxx11
 )
