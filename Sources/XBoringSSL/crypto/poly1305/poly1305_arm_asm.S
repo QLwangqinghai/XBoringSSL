@@ -1,4 +1,4 @@
-#define BORINGSSL_PREFIX CNIOBoringSSL
+#define BORINGSSL_PREFIX XBoringSSL
 #if defined(__arm__) && defined(__linux__)
 #if defined(__has_feature)
 #if __has_feature(memory_sanitizer) && !defined(OPENSSL_NO_ASM)

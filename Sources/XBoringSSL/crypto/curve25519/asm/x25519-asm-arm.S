@@ -1,4 +1,4 @@
-#define BORINGSSL_PREFIX CNIOBoringSSL
+#define BORINGSSL_PREFIX XBoringSSL
 #if defined(__arm__) && defined(__linux__)
 /* Copyright (c) 2015, Google Inc.
  *

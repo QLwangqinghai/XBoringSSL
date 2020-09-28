@@ -1,4 +1,4 @@
-#define BORINGSSL_PREFIX CNIOBoringSSL
+#define BORINGSSL_PREFIX XBoringSSL
 #if defined(__x86_64__) && defined(__linux__)
 // Copyright (c) 2017, the HRSS authors.
 //
